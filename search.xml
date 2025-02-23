@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>TOF实验中俘获截面与陷阱浓度积</title>
+    <url>/2025/02/23/ToF/</url>
+    <content><![CDATA[<p>上星期我通过SRH(Shockley-Read-Hall)模型推导了TOF实验中已知：陷阱能   级、捕获时间、释放时间，求出了陷阱浓度。<br>$$<br>N_t&#x3D;\frac{\tau_r N_c}{\tau_c}\exp(\frac{E_t}{kT})<br>$$<br>其中$N_t$为陷阱浓度，$\tau_r$为释放时间，$\tau_c$为俘获时间，$N_c$为价带有效态密度，$E_t$为陷阱能级，$k$为玻尔兹曼常数，$T$为温度。</p>
+]]></content>
+      <tags>
+        <tag>-&quot;TOF&quot; -&quot;俘获截面&quot;</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2025/02/20/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>.</p>
