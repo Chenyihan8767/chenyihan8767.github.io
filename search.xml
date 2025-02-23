@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>TOF实验中俘获截面与陷阱浓度积</title>
+    <url>/2025/02/23/ToF/</url>
+    <content><![CDATA[<p>SRH模型中，捕获常数$c_n$为：</p>
+<div>
+$$
+c_n=v_{\text{th}} \cdot \sigma_n \cdot n
+$$
+<div>
+其中$n$是自由载流子浓度；捕获速率$R_c$如下：
+$$
+R_c=c_n \cdot N_t (1-f_t)
+$$
+
+<p>$$<br>R_c &#x3D; v_{\text{th}} \cdot \sigma_n \cdot n \cdot N_t (1 - f_t)<br>$$</p>
+<p>其中$N_t$是陷阱浓度，$f_t$是陷阱被载流子占据的概率。</p>
+<p>释放速率$R_e$如下：<br>$$<br>R_e&#x3D;e_n \cdot N_t f_t<br>$$<br>在热平衡条件下，即TOF图象中平台期部分，根据$R_c&#x3D;R_e$得：<br>$$<br>\frac{en}{cn}&#x3D;\frac{1-f_t}{f_t}<br>$$<br>缺陷能级被电子占据的概率为<br>$$<br>f_t &#x3D; \frac{1}{1 + \exp\left(\frac{E_t - E_F}{kT}\right)}<br>$$<br>代入上式：<br>$$<br>\frac{e_n}{c_n}&#x3D;\exp(\frac{E_t-E_F}{kT})<br>$$<br>得到：<br>$$<br>e_n&#x3D;v_{\text{th}}\cdot\sigma_n\cdot n \cdot\exp(\frac{E_t-E_F}{kT})<br>$$<br>又因为：<br>$$<br>n&#x3D;N_c\exp(-\frac{E_c-E_F}{kT})<br>$$<br>代入$e_n$表达式得：<br>$$<br>e_n&#x3D;v_{\text{th}}\sigma_n\cdot N_c\exp(\frac{E_t-E_c}{kT})<br>$$<br>捕获时间$\tau_c$与释放时间$\tau_r$表示如下：<br>$$<br>\tau_c&#x3D;\frac{1}{\frac{R_c}{n}}&#x3D;\frac{1}{v_{\text{th}}\sigma_n\cdot N_t(1-f_t)}<br>$$</p>
+<p>$$<br>\tau_r&#x3D;\frac{1}{\frac{R_e}{N_t f_t}}&#x3D;\frac{1}{e_n}&#x3D;\frac{1}{v_{\text{th}}\sigma_n\cdot N_c\exp(\frac{E_t-E_c}{kT})}<br>$$</p>
+<p>联立上面两式消去未知数$\sigma_n$，并且令$E_c&#x3D;0$：<br>$$<br>N_t&#x3D;\frac{\tau_r N_c \exp(\frac{E_t}{kT})}{\tau_c(1-f_t)}<br>$$<br>若$f_t&lt;&lt;1$，则近似得到：<br>$$<br>N_t&#x3D;\frac{\tau_r N_c}{\tau_c}\exp(\frac{E_t}{kT})<br>$$<br>若小注入条件不满足，$N_t$表达式中将引入$E_F$，即费米能级相关数据。</p>
+]]></content>
+      <tags>
+        <tag>-&quot;TOF&quot; -&quot;俘获截面&quot;</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2025/02/20/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>.</p>
@@ -17,19 +41,5 @@
 
 <p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>TOF实验中俘获截面与陷阱浓度积</title>
-    <url>/2025/02/23/ToF/</url>
-    <content><![CDATA[<p>SRH模型中，捕获常数$c_n$为：<br>$$<br>c_n&#x3D;v_{\text{th}} \cdot \sigma_n \cdot n<br>$$<br>其中$n$是自由载流子浓度；捕获速率$R_c$如下：<br>$$<br>R_c&#x3D;c_n \cdot N_t (1-f_t)<br>$$</p>
-<p>$$<br>R_c &#x3D; v_{\text{th}} \cdot \sigma_n \cdot n \cdot N_t (1 - f_t)<br>$$</p>
-<p>其中$N_t$是陷阱浓度，$f_t$是陷阱被载流子占据的概率。</p>
-<p>释放速率$R_e$如下：<br>$$<br>R_e&#x3D;e_n \cdot N_t f_t<br>$$<br>在热平衡条件下，即TOF图象中平台期部分，根据$R_c&#x3D;R_e$得：<br>$$<br>\frac{en}{cn}&#x3D;\frac{1-f_t}{f_t}<br>$$<br>缺陷能级被电子占据的概率为<br>$$<br>f_t &#x3D; \frac{1}{1 + \exp\left(\frac{E_t - E_F}{kT}\right)}<br>$$<br>代入上式：<br>$$<br>\frac{e_n}{c_n}&#x3D;\exp(\frac{E_t-E_F}{kT})<br>$$<br>得到：<br>$$<br>e_n&#x3D;v_{\text{th}}\cdot\sigma_n\cdot n \cdot\exp(\frac{E_t-E_F}{kT})<br>$$<br>又因为：<br>$$<br>n&#x3D;N_c\exp(-\frac{E_c-E_F}{kT})<br>$$<br>代入$e_n$表达式得：<br>$$<br>e_n&#x3D;v_{\text{th}}\sigma_n\cdot N_c\exp(\frac{E_t-E_c}{kT})<br>$$<br>捕获时间$\tau_c$与释放时间$\tau_r$表示如下：<br>$$<br>\tau_c&#x3D;\frac{1}{\frac{R_c}{n}}&#x3D;\frac{1}{v_{\text{th}}\sigma_n\cdot N_t(1-f_t)}<br>$$</p>
-<p>$$<br>\tau_r&#x3D;\frac{1}{\frac{R_e}{N_t f_t}}&#x3D;\frac{1}{e_n}&#x3D;\frac{1}{v_{\text{th}}\sigma_n\cdot N_c\exp(\frac{E_t-E_c}{kT})}<br>$$</p>
-<p>联立上面两式消去未知数$\sigma_n$，并且令$E_c&#x3D;0$：<br>$$<br>N_t&#x3D;\frac{\tau_r N_c \exp(\frac{E_t}{kT})}{\tau_c(1-f_t)}<br>$$<br>若$f_t&lt;&lt;1$，则近似得到：<br>$$<br>N_t&#x3D;\frac{\tau_r N_c}{\tau_c}\exp(\frac{E_t}{kT})<br>$$<br>若小注入条件不满足，$N_t$表达式中将引入$E_F$，即费米能级相关数据。</p>
-]]></content>
-      <tags>
-        <tag>-&quot;TOF&quot; -&quot;俘获截面&quot;</tag>
-      </tags>
   </entry>
 </search>
